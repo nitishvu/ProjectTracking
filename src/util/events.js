@@ -3,7 +3,7 @@
  */
 // Import events module
 var events = require('events');
-var listenerCount = require('listenercount')
+var listenerCount = require('listenercount');
 
 // Create an eventEmitter object
 var eventEmitter = new events.EventEmitter();
@@ -14,7 +14,7 @@ var connectHandler = function connected() {
 
     // Fire the data_received event
     eventEmitter.emit('data_received');
-}
+};
 
 // Bind the connection event with the handler
 eventEmitter.on('connection', connectHandler);

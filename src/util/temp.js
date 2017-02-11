@@ -1,10 +1,12 @@
 var fs = require('fs');
 
-var data1="";
+var data1 = '';
 
 {
     fs.readFile('temp.txt', function (err, data) {
-        if (err) return console.error(err);
+        if (err) {
+            return (console.error(err));
+        }
 
         console.log(data.toString());
         data1 = data;
@@ -12,4 +14,4 @@ var data1="";
 
 }
 
-console.log('Program Ended' +data1+"----------------------");
+console.log('Program Ended' + data1 + '----------------------');

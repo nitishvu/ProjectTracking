@@ -7,21 +7,23 @@ var fs = require('fs');
 
 
 console.log('\n *STARTING* \n');
-;
+
 // Get content from file
-var x,y = '';
+var x, y = '';
 var fileName = '';
 
-var writeCallback = function() {
+var writeCallback = function () {
     console.log('write call back is coplete');
 };
-var saveTableData = function(jsonContent,fileName) {
+var saveTableData = function (jsonContent, fileName) {
     var now = Date.now();
-  // var newDate = dateFormat(now, "isoDateTime");
+    // var newDate = dateFormat(now, "isoDateTime");
 
     var backupFileName = fileName + '_' + now + 'bkp';
-    fs.rename(fileName, backupFileName, function(err) {
-        if (err) console.log('ERROR: ' + err);
+    fs.rename(fileName, backupFileName, function (err) {
+        if (err) {
+            console.log('ERROR: ' + err);
+        }
     });
 
     var jsonString = JSON.stringify(jsonContent);

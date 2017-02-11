@@ -5,7 +5,7 @@ var fs = require('fs');
 console.log('\n *STARTING* \n');
 // Get content from file
 var x,y = '';
-var fileName="";
+var fileName='';
 var getJsonContents = function(jsonFile) {
 
     var contents = fs.readFileSync(jsonFile);

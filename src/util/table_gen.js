@@ -3,13 +3,13 @@
 //getJsonContents();
 //var getJsonContents = require('./ReadJsonData')(jsonFile);
 
-var getTableHtml = function(getJsonContents) {
+var getTableHtml = function (getJsonContents) {
     var tableHtml = '<tbody id=\"display_table_body\">';
     var jsonContent = getJsonContents;
     var x, y = '';
     for (x in jsonContent) {
         // console.log(jsonContent[x]);
-        tableHtml = tableHtml + '<tr class=\"success\" id=\"td_id'+x+'\">';
+        tableHtml = tableHtml + '<tr class=\"success\" id=\"td_id' + x + '\">';
         var tempContent = jsonContent[x];
         for (y in tempContent) {
             tableHtml = tableHtml + '<td colspan=\"1\" class=\"tdCol\" align=\"left\">' + tempContent[y] + '</td>';
@@ -20,7 +20,7 @@ var getTableHtml = function(getJsonContents) {
     tableHtml = tableHtml + '<tbody>';
 
     return tableHtml;
-    console.log("table html = "+tableHtml);
+  //  console.log('table html = ' + tableHtml);
 
 };
 

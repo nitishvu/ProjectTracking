@@ -60,12 +60,12 @@ app.get('/api/users', function(req, res) {
 
 app.post('/api/users', function(req, res) {
 
-    res.send("this post call for api/users");
+    res.send('this post call for api/users');
 });
 
 app.all('/test', function(req, res) {
 
-    res.send("this all call for route test");
+    res.send('this all call for route test');
 });
 
 app.get('/api/saveData', function(req, res) {
