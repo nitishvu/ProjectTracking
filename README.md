@@ -1,6 +1,6 @@
 # ProjectTracking
 
-A simple project Tracking sheet Devloped using NODEJS,ANGULARJS,EXPRESSJS,MONGODB
+A simple project Tracking sheet Devloped using NODEJS,ANGULARJS2,EXPRESSJS,MONGODB
 
 
 #to check out code follow the below procedure
@@ -26,3 +26,18 @@ From https://github.com/nitishvu/ProjectTracking
 
 
 exit
+#####starting Application##########
+
+Pre requisites:
+	Make sure mongo dB server is running on standard port 27017
+	Node js version 6.9 or above is installed 
+
+->Go to project root folder "ProjectTracking" and execute below command
+$node server.js
+Listening on port 8000
+successfully connected tomongodb://localhost/projectdetails
+
+->open browser and navigate to "http://localhost:8000/"
+
+
+let me know if you want me to add any new features 
