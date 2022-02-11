@@ -16,7 +16,7 @@
     "dateformat": "^2.0.0",
     "ejs": "^2.5.5",
     "express": "^4.14.1",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^5.3.1",
     "fs": "0.0.1-security",
     "jscs": "^3.0.7",
     "jshint": "^2.9.4",
